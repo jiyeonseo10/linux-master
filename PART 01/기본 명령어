@@ -1,0 +1,280 @@
+(base) jiyeonseo@jiyeonseoui-MacBookPro ~ % ssh jiyeonseo@192.168.64.5
+The authenticity of host '192.168.64.5 (192.168.64.5)' can't be established.
+ED25519 key fingerprint is SHA256:BgXjrTP4E7lxFlr8oH2XVztnFWDSMljh2ZNkjJadX34.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.64.5' (ED25519) to the list of known hosts.
+jiyeonseo@192.168.64.5's password: 
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-35-generic aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+68 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+jiyeonseo@UBTVM1:~$ which pwd
+/usr/bin/pwd
+jiyeonseo@UBTVM1:~$ alias ll='ls -la'
+jiyeonseo@UBTVM1:~$ ll
+total 72
+drwxr-x--- 15 jiyeonseo jiyeonseo 4096 Jul  5 21:35 .
+drwxr-xr-x  3 root      root      4096 Jul  5 20:15 ..
+-rw-r--r--  1 jiyeonseo jiyeonseo  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 jiyeonseo jiyeonseo 3771 Mar 31  2024 .bashrc
+drwx------ 10 jiyeonseo jiyeonseo 4096 Jul  5 21:37 .cache
+drwx------ 10 jiyeonseo jiyeonseo 4096 Jul  5 20:24 .config
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Desktop
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Documents
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Downloads
+drwx------  4 jiyeonseo jiyeonseo 4096 Jul  5 20:21 .local
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Music
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Pictures
+-rw-r--r--  1 jiyeonseo jiyeonseo  807 Mar 31  2024 .profile
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Public
+drwx------  3 jiyeonseo jiyeonseo 4096 Jul  5 20:21 snap
+drwx------  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 .ssh
+-rw-r--r--  1 jiyeonseo jiyeonseo    0 Jul  5 21:35 .sudo_as_admin_successful
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Templates
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Videos
+jiyeonseo@UBTVM1:~$ unalias ll
+jiyeonseo@UBTVM1:~$ ll
+ll: command not found
+jiyeonseo@UBTVM1:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+jiyeonseo@UBTVM1:~$ echo $PS1
+\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$
+jiyeonseo@UBTVM1:~$ man ls
+jiyeonseo@UBTVM1:~$ man -u uname
+jiyeonseo@UBTVM1:~$ man -f
+whatis what?
+jiyeonseo@UBTVM1:~$ whatis
+whatis what?
+jiyeonseo@UBTVM1:~$ whatis ls
+ls (1)               - list directory contents
+jiyeonseo@UBTVM1:~$ manpath
+/usr/local/man:/usr/local/share/man:/usr/share/man
+jiyeonseo@UBTVM1:~$ whereis shutdown
+shutdown: /usr/sbin/shutdown /usr/share/man/man8/shutdown.8.gz /usr/share/man/man2/shutdown.2.gz
+jiyeonseo@UBTVM1:~$ whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+jiyeonseo@UBTVM1:~$ man -k
+apropos what?
+jiyeonseo@UBTVM1:~$ apropos
+apropos what?
+jiyeonseo@UBTVM1:~$ apropos system
+proc_filesystems (5) - supported filesystems
+30-systemd-environment-d-generator (8) - Load variables specified by environm...
+UPower (7)           - System-wide Power Management
+_syscall (2)         - invoking a system call without library support (OBSOLETE)
+_sysctl (2)          - read/write system parameters
+(중략)
+systemd.syntax (7)   - General syntax of systemd configuration files
+systemd.system-credentials (7) - System Credentials
+systemd.target (5)   - Target unit configuration
+systemd.time (7)     - Time and date specifications
+systemd.timer (5)    - Timer unit configuration
+systemd.unit (5)     - Unit configuration
+jiyeonseo@UBTVM1:~$ passwd -S jiyeonseo
+jiyeonseo P 2026-07-05 0 99999 7 -1
+jiyeonseo@UBTVM1:~$ sudo passwd root
+[sudo] password for jiyeonseo: 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+jiyeonseo@UBTVM1:~$ su -
+Password: 
+root@UBTVM1:~# pwd
+/root
+root@UBTVM1:~# exit
+logout
+jiyeonseo@UBTVM1:~$ su - root
+Password: 
+root@UBTVM1:~# pwd
+/root
+root@UBTVM1:~# exit
+logout
+jiyeonseo@UBTVM1:~$ su root
+Password: 
+root@UBTVM1:/home/jiyeonseo# pwd
+/home/jiyeonseo
+root@UBTVM1:/home/jiyeonseo# exit
+exit
+jiyeonseo@UBTVM1:~$ cat /etc/default/useradd
+# Default values for useradd(8)
+#
+# The SHELL variable specifies the default login shell on your
+# system.
+# Similar to DSHELL in adduser. However, we use "sh" here because
+# useradd is a low level utility and should be as general
+# as possible
+SHELL=/bin/sh
+#
+# The default group for users
+# 100=users on Debian systems
+# Same as USERS_GID in adduser
+# This argument is used when the -n flag is specified.
+# The default behavior (when -n and -g are not specified) is to create a
+# primary user group with the same name as the user being added to the
+# system.
+# GROUP=100
+#
+# The default home directory. Same as DHOME for adduser
+# HOME=/home
+#
+# The number of days after a password expires until the account 
+# is permanently disabled
+# INACTIVE=-1
+#
+# The default expire date
+# EXPIRE=
+#
+# The SKEL variable specifies the directory containing "skeletal" user
+# files; in other words, files such as a sample .profile that will be
+# copied to the new user's home directory when it is created.
+# SKEL=/etc/skel
+#
+# Defines whether the mail spool should be created while
+# creating the account
+# CREATE_MAIL_SPOOL=no
+
+jiyeonseo@UBTVM1:~$ tail -l /etc/passwd
+hplip:x:116:7:HPLIP system user,,,:/run/hplip:/bin/false
+gnome-remote-desktop:x:988:988:GNOME Remote Desktop:/var/lib/gnome-remote-desktop:/usr/sbin/nologin
+polkitd:x:987:987:User for polkitd:/:/usr/sbin/nologin
+rtkit:x:117:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+colord:x:118:120:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+gnome-initial-setup:x:119:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:120:121:Gnome Display Manager:/var/lib/gdm3:/bin/false
+nm-openvpn:x:121:122:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+jiyeonseo:x:1000:1000:Jiyeonseo:/home/jiyeonseo:/bin/bash
+sshd:x:122:65534::/run/sshd:/usr/sbin/nologin
+jiyeonseo@UBTVM1:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,jiyeonseo
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:jiyeonseo
+floppy:x:25:
+tape:x:26:
+sudo:x:27:jiyeonseo
+audio:x:29:
+dip:x:30:jiyeonseo
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:jiyeonseo
+staff:x:50:
+games:x:60:
+users:x:100:jiyeonseo
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+crontab:x:997:
+systemd-timesync:x:996:
+input:x:995:
+sgx:x:994:
+kvm:x:993:
+render:x:992:
+messagebus:x:101:
+syslog:x:102:
+systemd-resolve:x:991:
+uuidd:x:103:
+_ssh:x:104:
+tss:x:105:
+ssl-cert:x:106:
+systemd-oom:x:990:
+bluetooth:x:107:
+rdma:x:108:
+whoopsie:x:109:
+netdev:x:110:
+avahi:x:111:
+tcpdump:x:112:
+sssd:x:113:
+lpadmin:x:114:jiyeonseo
+fwupd-refresh:x:989:
+scanner:x:115:saned
+saned:x:116:
+geoclue:x:117:
+pipewire:x:118:
+gnome-remote-desktop:x:988:
+polkitd:x:987:
+rtkit:x:119:
+colord:x:120:
+gdm:x:121:
+nm-openvpn:x:122:
+lxd:x:123:
+jiyeonseo:x:1000:
+gamemode:x:986:
+gnome-initial-setup:x:985:
+jiyeonseo@UBTVM1:~$ groupadd jys
+groupadd: Permission denied.
+groupadd: cannot lock /etc/group; try again later.
+jiyeonseo@UBTVM1:~$ sudo !!
+sudo groupadd jys
+jiyeonseo@UBTVM1:~$ sudo groupdel jys
+jiyeonseo@UBTVM1:~$ users
+jiyeonseo jiyeonseo jiyeonseo
+jiyeonseo@UBTVM1:~$ users --version
+users (GNU coreutils) 9.4
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Joseph Arceneaux and David MacKenzie.
+jiyeonseo@UBTVM1:~$ who
+jiyeonseo seat0        2026-07-05 20:21 (login screen)
+jiyeonseo tty2         2026-07-05 20:21 (tty2)
+jiyeonseo pts/1        2026-07-05 21:37 (192.168.64.1)
+jiyeonseo@UBTVM1:~$ who -r
+         run-level 5  2026-07-05 20:21
+jiyeonseo@UBTVM1:~$ who -b
+         system boot  2026-07-05 20:21
+jiyeonseo@UBTVM1:~$ who -q
+jiyeonseo jiyeonseo jiyeonseo
+# users=3
+jiyeonseo@UBTVM1:~$ w
+ 22:00:09 up 33 min,  2 users,  load average: 0.15, 0.03, 0.01
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+jiyeonse          192.168.64.1     21:37    1:38m  0.00s  0.02s sshd: jiyeonseo [priv]
+jiyeonse tty2     -                20:21    1:38m  0.01s  0.01s /usr/libexec/gnome-sessio
+jiyeonseo@UBTVM1:~$ id
+uid=1000(jiyeonseo) gid=1000(jiyeonseo) groups=1000(jiyeonseo),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),114(lpadmin)
+jiyeonseo@UBTVM1:~$ groups
+jiyeonseo adm cdrom sudo dip plugdev users lpadmin
+jiyeonseo@UBTVM1:~$ 
