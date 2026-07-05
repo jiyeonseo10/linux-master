@@ -225,16 +225,3 @@ groups
 - groups
 
 ---
-
-## Next Practice
-
-- chmod
-- chown
-- chgrp
-- ln
-- find
-- grep
-- ps
-- kill
-- tar
-- systemctl
