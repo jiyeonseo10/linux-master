@@ -1,0 +1,214 @@
+Last login: Sun Jul  5 21:37:17 on ttys000
+(base) jiyeonseo@jiyeonseoui-MacBookPro ~ % ssh jiyeonseo@192.168.64.5
+jiyeonseo@192.168.64.5's password: 
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-35-generic aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+68 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Last login: Sun Jul  5 21:37:30 2026 from 192.168.64.1
+jiyeonseo@UBTVM1:~$ pwd
+/home/jiyeonseo
+jiyeonseo@UBTVM1:~$ cd ..
+jiyeonseo@UBTVM1:/home$ cd /
+jiyeonseo@UBTVM1:/$ cd -
+/home
+jiyeonseo@UBTVM1:/home$ cd .
+jiyeonseo@UBTVM1:/home$ cd ~
+jiyeonseo@UBTVM1:~$ mkdir test
+jiyeonseo@UBTVM1:~$ ls -l
+total 40
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Desktop
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Documents
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Downloads
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Music
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Pictures
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Public
+drwx------ 3 jiyeonseo jiyeonseo 4096 Jul  5 20:21 snap
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Templates
+drwxrwxr-x 2 jiyeonseo jiyeonseo 4096 Jul  6 20:09 test
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Videos
+jiyeonseo@UBTVM1:~$ rmdir test
+jiyeonseo@UBTVM1:~$ ls -l
+total 36
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Desktop
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Documents
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Downloads
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Music
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Pictures
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Public
+drwx------ 3 jiyeonseo jiyeonseo 4096 Jul  5 20:21 snap
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Templates
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Videos
+jiyeonseo@UBTVM1:~$ ls -la
+total 80
+drwxr-x--- 15 jiyeonseo jiyeonseo 4096 Jul  6 20:09 .
+drwxr-xr-x  3 root      root      4096 Jul  5 20:15 ..
+-rw-------  1 jiyeonseo jiyeonseo  849 Jul  5 22:11 .bash_history
+-rw-r--r--  1 jiyeonseo jiyeonseo  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 jiyeonseo jiyeonseo 3771 Mar 31  2024 .bashrc
+drwx------ 10 jiyeonseo jiyeonseo 4096 Jul  5 21:37 .cache
+drwx------ 12 jiyeonseo jiyeonseo 4096 Jul  5 22:11 .config
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Desktop
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Documents
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Downloads
+-rw-------  1 jiyeonseo jiyeonseo   20 Jul  5 21:43 .lesshst
+drwx------  4 jiyeonseo jiyeonseo 4096 Jul  5 20:21 .local
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Music
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Pictures
+-rw-r--r--  1 jiyeonseo jiyeonseo  807 Mar 31  2024 .profile
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Public
+drwx------  3 jiyeonseo jiyeonseo 4096 Jul  5 20:21 snap
+drwx------  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 .ssh
+-rw-r--r--  1 jiyeonseo jiyeonseo    0 Jul  5 21:35 .sudo_as_admin_successful
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Templates
+drwxr-xr-x  2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Videos
+jiyeonseo@UBTVM1:~$ touch test1
+jiyeonseo@UBTVM1:~$ ls -l
+total 36
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Desktop
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Documents
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Downloads
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Music
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Pictures
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Public
+drwx------ 3 jiyeonseo jiyeonseo 4096 Jul  5 20:21 snap
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Templates
+-rw-rw-r-- 1 jiyeonseo jiyeonseo    0 Jul  6 20:10 test1
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Videos
+jiyeonseo@UBTVM1:~$ touch test1
+jiyeonseo@UBTVM1:~$ ls -l
+total 36
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Desktop
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Documents
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Downloads
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Music
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Pictures
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Public
+drwx------ 3 jiyeonseo jiyeonseo 4096 Jul  5 20:21 snap
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Templates
+-rw-rw-r-- 1 jiyeonseo jiyeonseo    0 Jul  6 20:11 test1
+drwxr-xr-x 2 jiyeonseo jiyeonseo 4096 Jul  5 20:21 Videos
+jiyeonseo@UBTVM1:~$ file -b test1
+empty
+jiyeonseo@UBTVM1:~$ find -name test1
+./test1
+jiyeonseo@UBTVM1:~$ locate *.bak
+Command 'locate' not found, but can be installed with:
+sudo apt install plocate
+jiyeonseo@UBTVM1:~$ cat config
+cat: config: No such file or directory
+jiyeonseo@UBTVM1:~$ vi config
+jiyeonseo@UBTVM1:~$ cat config
+hello~~!!
+jiyeonseo@UBTVM1:~$ cat -n config
+     1	hello~~!!
+jiyeonseo@UBTVM1:~$ head -1 config
+hello~~!!
+jiyeonseo@UBTVM1:~$ tail -c 1
+^C
+jiyeonseo@UBTVM1:~$ tail -1 config
+hello~~!!
+jiyeonseo@UBTVM1:~$ more wgetrc
+more: cannot open wgetrc: No such file or directory
+jiyeonseo@UBTVM1:~$ grep jiyeonseo /etc/passwd
+jiyeonseo:x:1000:1000:Jiyeonseo:/home/jiyeonseo:/bin/bash
+jiyeonseo@UBTVM1:~$ grep -n  jiyeonseo /etc/passwd
+49:jiyeonseo:x:1000:1000:Jiyeonseo:/home/jiyeonseo:/bin/bash
+jiyeonseo@UBTVM1:~$ wc config
+ 1  1 10 config
+jiyeonseo@UBTVM1:~$ vi config
+jiyeonseo@UBTVM1:~$ sort -f config
+
+
+A
+A
+A
+A
+A
+A
+A
+A
+B
+B
+B
+B
+B
+B
+Bi
+C
+C
+hello~~!!
+jiyeonseo@UBTVM1:~$ cut -c 2-3 config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i
+
+
+
+el
+jiyeonseo@UBTVM1:~$ rmdir config
+rmdir: failed to remove 'config': Not a directory
+jiyeonseo@UBTVM1:~$ rm config
+jiyeonseo@UBTVM1:~$ vi T1
+jiyeonseo@UBTVM1:~$ vi T2
+jiyeonseo@UBTVM1:~$ diff T1 T2
+1c1
+< This is Book!
+---
+> This is Good!
+jiyeonseo@UBTVM1:~$ cmp -b T1 T2
+T1 T2 differ: byte 9, line 1 is 102 B 107 G
+jiyeonseo@UBTVM1:~$ comm -1 T1 T2
+This is Good!
+jiyeonseo@UBTVM1:~$ comm -2 T1 T2
+This is Book!
+jiyeonseo@UBTVM1:~$ comm -3 T1 T2
+This is Book!
+	This is Good!
+jiyeonseo@UBTVM1:~$ who > LOGIN
+jiyeonseo@UBTVM1:~$ cat LOGIN
+jiyeonseo pts/0        2026-07-06 20:07 (192.168.64.1)
+jiyeonseo@UBTVM1:~$ rm T1
+jiyeonseo@UBTVM1:~$ rm T2
+jiyeonseo@UBTVM1:~$ ls /usr/bin | sort | grep zip
+funzip
+gunzip
+gzip
+preunzip
+prezip
+prezip-bin
+streamzip
+unzip
+unzipsfx
+zip
+zipcloak
+zipdetails
+zipgrep
+zipinfo
+zipnote
+zipsplit
+jiyeonseo@UBTVM1:~$ rm LOGIN
+jiyeonseo@UBTVM1:~$ 
