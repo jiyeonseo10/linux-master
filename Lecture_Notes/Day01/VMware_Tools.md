@@ -10,7 +10,7 @@ mkdir /mnt/vmware
 
 **Description**
 
-VMware Tools CD를 마운트할 디렉터리를 생성한다.
+VMware Tools CD를 마운트할 디렉토리를 생성한다.
 
 ---
 
@@ -24,14 +24,14 @@ mount -t iso9660 /dev/cdrom /mnt/vmware
 
 **Description**
 
-VMware Tools CD를 `/mnt/vmware` 디렉터리에 마운트한다.
+VMware Tools CD를 `/mnt/vmware` 디렉토리에 마운트한다.
 
 **Notes**
 
-- `mount` : 파일 시스템을 마운트하는 명령어
-- `-t iso9660` : CD-ROM 파일 시스템 지정
-- `/dev/cdrom` : CD-ROM 장치 파일
-- `/mnt/vmware` : 마운트 위치
+- `mount`: 파일 시스템을 마운트하는 명령어
+- `-t iso9660`: CD-ROM 파일 시스템 지정
+- `/dev/cdrom`: CD-ROM 장치 파일
+- `/mnt/vmware`: 마운트 위치
 
 ---
 
@@ -60,7 +60,7 @@ mkdir /Vmware
 
 **Description**
 
-설치 파일을 복사하여 작업할 디렉터리를 생성한다.
+설치 파일을 복사하여 작업할 디렉토리를 생성한다.
 
 ---
 
@@ -74,12 +74,12 @@ cp VMwareTools-10.3.26-22085142.tar.gz /Vmware/
 
 **Description**
 
-VMware Tools 설치 파일을 작업 디렉터리(`/Vmware`)로 복사한다.
+VMware Tools 설치 파일을 작업 디렉토리(`/Vmware`)로 복사한다.
 
 **Notes**
 
-- `cp` : 파일 복사 명령어
-- `/Vmware` : 작업 디렉터리
+- `cp`: 파일 복사 명령어
+- `/Vmware`: 작업 디렉터리
 
 ---
 
@@ -112,10 +112,10 @@ tar -zxvf VMwareTools-10.3.26-22085142.tar.gz
 
 **Notes**
 
-- `z` : gzip 압축 해제
-- `x` : 압축 해제
-- `v` : 진행 과정 출력
-- `f` : 파일 지정
+- `z`: gzip 압축 해제
+- `x`: 압축 해제
+- `v`: 진행 과정 출력
+- `f`: 파일 지정
 
 ---
 
@@ -130,7 +130,7 @@ ls
 
 **Description**
 
-압축 해제된 VMware Tools 설치 디렉터리로 이동하여 파일 목록을 확인한다.
+압축 해제된 VMware Tools 설치 디렉토리로 이동하여 파일 목록을 확인한다.
 
 ---
 
